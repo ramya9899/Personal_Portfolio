@@ -182,7 +182,7 @@ nav
     max-width: 1px;
 }
 .edu-box1 div,.edu-box2 div{
-    height: 230px;
+    height: 250px;
 }
 /*----------------- PG, UG, School Design -------------*/
 .it,.bca,.hsl{
@@ -397,8 +397,11 @@ nav
         width: 100%;
         padding: 10px;
     }
-    .edu-box1 div,.edu-box2 div{
-        height: unset;
+    .edu-box1 .empty{
+        height:50px;
+    }
+    .edu-box2 .empty{
+        height: 0px;
     }
     .edu-box3{
         display: none;
