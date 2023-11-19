@@ -1,0 +1,406 @@
+/*------------------- Universal Selector ------------------*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*--------------------- CSS Variables ----------------------*/
+:root{
+    --sky_blue:cyan;
+    --white:white;
+    --black:black;
+    --pink:#ff00ff;
+    --font_size:50px;
+}
+/*----------------------- Common Flex Class ----------------*/
+.flex
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*-------------------- Navbar Design -----------------------*/
+nav
+{
+    position: relative;
+    z-index: 999;
+    background-color: rgba(0, 0, 0,1);
+}
+/*----------------------- Menu Bar Design ------------------*/
+.menu
+{
+    text-decoration:none;
+    font-weight: bold;
+    color:var(--white);
+    font-size: 20px;
+}
+.menu:hover
+{
+    color: var(--sky_blue);
+    text-decoration: underline;
+}
+/*-------------- Home and About Page Design -------------------*/
+.home,.about
+{
+    width: 100%;
+    min-height: 100vh;
+    justify-content:space-between;
+    align-items: center;
+    padding: 70px 10% 10px;
+    color: var(--white);
+    background-color:var(--black);
+}
+/*------------- Home Page Content -------------*/
+.content-design
+{
+    color:var(--sky_blue);
+    font-size: 50px;
+}
+/*----------------- Home and About Page Images and Animation ---------------*/
+.image
+{
+    width: 400px;
+    height: 400px;
+    background: url("./image/home.gif") center ;
+    background-size: cover;
+    border-radius: 50%;
+    animation: 5s linear infinite image;
+    box-shadow: 0px 0px 20px 3px var(--sky_blue); 
+    border:5px solid var(--sky_blue);
+    transition: 1s;
+}
+@keyframes image {
+    0%
+    {
+        border-color: var(--sky_blue);
+    }
+    25%
+    {
+        border-top-color: var(--pink);
+    }
+    50%
+    {
+        border-right-color: var(--pink);
+    }
+    75%
+    {
+        border-bottom-color: var(--pink);
+    }
+    100%
+    {
+        border-left-color: var(--pink);
+    }   
+}
+/*---------------------- Personal Details -------------------*/
+.about{
+    width: 100%;
+    min-height: 100vh;
+}
+.image1{
+    background-image: url("./image/IMG_20231118_183418.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 3px var(--pink); 
+}
+/*------------- About Me heading ----------*/
+.heading
+{
+    font-size:var(--font_size);
+    color: var(--sky_blue);
+}
+.personal-detail
+{
+    width: 400px;
+    display: flex;
+    padding: 10px;
+    gap:10px;
+}
+.personal-detail .detail-heading
+{
+    width: 200px;
+    font-weight: bold;
+}
+/*--------------------- Resume Download Botton -----------------*/
+.resume
+{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    background-color:var(--sky_blue);
+    color: var(--black);
+    text-decoration: none;
+}
+.resume:hover
+{
+    background-color: var(--black);
+    color: var(--sky_blue);
+    border: 2px solid var(--sky_blue);
+}
+/*---------------- Education -----------------*/
+.education
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+}
+/*---------------- Education Heading -------------*/
+.edu{
+    padding-left: 30px;
+}
+/*--------------- Education Overall Div -------------*/
+.edu-box1,.edu-box2
+{
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.edu-box1{
+    border-right: 3px solid var(--white);
+}
+.edu-box1 div,.edu-box2 div{
+    width: 430px;
+    height: 230px;
+}
+/*----------------- PG, UG, School Design -------------*/
+.it,.bca,.hsl{
+    box-shadow: 1px 1px 3px 1px var(--white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px 20px;
+    font-weight: bold;
+}
+.year
+{
+    width: 150px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: var(--sky_blue);
+    color: var(--black);
+}
+.box{
+    gap: 10px;
+}
+/*-------------------- Icon design ----------------*/
+.arrow{
+    font-size: 25px;
+    display: block;
+}
+.circle
+{
+    font-size: 50px;
+    position: relative;
+    right: 25px;
+}
+/*------------------- Skills Design ----------------------*/
+.skill{
+    background-color: var(--black);
+    padding: 20px;
+    width: 100%;
+}
+.skill-box {
+    display: flex;
+    min-height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-box1{
+    width: 400px;
+    height: 230px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 2px var(--white);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 10px;
+}
+/*------------- Icon Design ------------------*/
+.icon{
+    font-size: 70px;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.program div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+/*-------------------- Projects Design -----------------------*/
+.project{
+    min-height: 100vh;
+    background-color: var(--black);
+    width: 100%;
+}
+.sub-project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 20px;
+}
+.project-1{
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 2px var(--white);
+}
+.project-one{
+    width: 300px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 50px 10px 10px;
+}
+.organic{
+    background-image: url("./image/organic.jpg");
+}
+.bootstrap{
+    background-image: url("./image/bootstrap.jpg");
+}
+.portfolio{
+    background-image: url("./image/portfolio.jpg");
+}
+.topic{
+    text-shadow: 1px 1px 5px black;
+    display: flex;
+    justify-content: center;
+}
+.project-two{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    bottom:-100%;
+    transition: 1s;
+    background-color: rgba(0, 0, 0,0.8);
+    padding: 20px 10px;
+}
+.project-1:hover .project-two{
+    bottom: -40%;
+}
+.link a{
+    text-decoration: none;
+    color: var(--white);
+}
+.link:hover a{
+    color: var(--sky_blue);
+    text-decoration: underline;
+}
+/*------------------------- Contact Design -------------------------*/
+.contact{
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+}
+.sub-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 70px;
+}
+.contact-design{
+    color: var(--sky_blue);
+}
+.profile{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 3px 2px var(--white);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+.icons-1{
+    text-decoration: none;
+    color: var(--white);
+}
+.copy{
+    text-align: center;
+    padding: 5px;
+}
+/*-------------------------- Media Query ------------------------*/
+/*------------ Mobile Size -----------*/
+@media screen and (min-width:300px) and (max-width:800px) {
+    /*------------- Home and About Page -------------*/
+    .home
+    {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .about
+    {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    } 
+    /*--------------- Personal Details ---------------*/
+    .personal-detail
+    {
+        width: 300px;
+        padding: 10px;
+    }
+    /*------------------ Image Size ------------------*/
+    .image
+    {
+        width: 220px;
+        height: 220px;
+    }
+    .image1
+    {
+        width: 200px;
+        height: 200px;
+    } 
+    /*----------------------- Education Design -------------------*/
+    .edu-box{
+        flex-wrap: wrap;
+    }
+    .edu-box1,.edu-box2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .edu-box1{
+        border-right: none;
+    }
+    .arrow,.circle{
+        visibility: hidden;
+    }
+}
+
+/*--------------- Tablet Size ----------------------*/
+@media screen and (min-width:750px) and (max-width:800px) {
+    /*---------------- Image Size -------------*/
+    .image
+    {
+        width: 400px;
+        height: 400px;
+    }   
+}
