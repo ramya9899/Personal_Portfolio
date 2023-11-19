@@ -165,6 +165,9 @@ nav
     flex-wrap: wrap;
     gap: 10px;
 }
+.box{
+    flex-wrap: wrap;
+}
 .edu-box1,.edu-box2
 {
     padding: 10px;
@@ -394,6 +397,9 @@ nav
         width: 100%;
         padding: 10px;
     }
+    .edu-box1 div,.edu-box2 div{
+        height: unset;
+    }
     .edu-box3{
         display: none;
     }
@@ -401,7 +407,8 @@ nav
         visibility: hidden;
     }
     .it,.bca,.hsl {
-        width:100%;
+        width:auto;
+        height: 220px;
         padding: 10px;
     }
 }
