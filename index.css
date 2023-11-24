@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*--------------------- CSS Variables ----------------------*/
 :root{
     --sky_blue:cyan;
